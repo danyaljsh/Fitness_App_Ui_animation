@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorPrimaryDark"
+  tools:context=".MainActivity">
+
+
+  <TextView
+    android:id="@+id/tvworkouttitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/workOutTitle"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="36sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tvworkoutsubtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="8dp"
+    android:text="All Level Beginers"
+    android:textAlignment="center"
+    android:textColor="#4c5067"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvworkouttitle" />
+
+  <View
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp"
+    android:background="#25293e"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvworkoutsubtitle" />
+
+  <TextView
+    android:id="@+id/tvworkoutintro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp"
+    android:text="Introduction"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="26sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/line" />
+
+  <TextView
+    android:id="@+id/tvworkoutsubintro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="8dp"
+    android:text="The text dummy could help anyone to \n design faster and better"
+    android:textColor="#4c5067"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvworkoutintro" />
+
+
+
+
+
+  <View
+    android:id="@+id/bgprogress"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#80ddd0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+
+  <TextView
+    android:id="@+id/btnexercise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start Now"
+    android:textAllCaps="true"
+    android:textColor="#ffffff"
+    android:textSize="22sp"
+    app:layout_constraintBottom_toBottomOf="@+id/bgprogress"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.92" />
+
+</android.support.constraint.ConstraintLayout>

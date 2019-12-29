@@ -1,5 +1,6 @@
 package com.danyal_jsh.fitnessuianimation;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -52,5 +53,15 @@ public class MainActivity extends AppCompatActivity {
     bgProgress.startAnimation(bgProgressAnim);
     bgProgressStop.startAnimation(bgProgressStopAnim);
     btnExercise.startAnimation(btnExerciseAnim);
+
+
+    //give an event to workOutActivity
+    btnExercise.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+       Intent intent =new Intent(MainActivity.this,WorkOutActivity.class);
+       startActivity(intent);
+      }
+    });
   }
 }
