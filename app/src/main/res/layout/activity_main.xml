@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorPrimaryDark"
+  tools:context=".MainActivity">
+
+
+  <ImageView
+    android:id="@+id/ivsplash"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginRight="32dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/picstatistic"
+    app:layout_constraintBottom_toTopOf="@+id/guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tvsplashtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="@string/splashText"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="32sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ivsplash" />
+
+  <TextView
+    android:id="@+id/tvsplashsubtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="@string/splashMessage"
+    android:textAlignment="center"
+    android:textColor="#4c5067"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvsplashtitle" />
+
+  <View
+    android:id="@+id/bgprogress"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#161c3e"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+  <View
+    android:id="@+id/bgprogressstop"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="#fbbfab"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+  <TextView
+    android:id="@+id/btnexercise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start Excercise"
+    android:textAllCaps="true"
+    android:textColor="#ffffff"
+    android:textSize="22sp"
+    app:layout_constraintBottom_toBottomOf="@+id/bgprogress"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.6" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.92" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.5" />
+</android.support.constraint.ConstraintLayout>
